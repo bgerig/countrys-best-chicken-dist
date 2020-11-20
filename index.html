@@ -1,0 +1,513 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>America’s Favorite Chicken, Delivered | The Country’s Best Chicken®</title>
+		<meta name="description" content="The Country’s Best Chicken® is a delivery-only restaurant concept by Pizza Ranch. Enjoy crispy, juicy, bone-in chicken, or go boneless with our cravable tenders and wings.">
+		<link rel="icon shortcut" href="logo.236e4034.svg">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="https://use.typekit.net/mgi2wls.css">
+		<link rel="stylesheet" href="swiper-bundle.min.381b9467.css">
+		<link rel="stylesheet" href="main.48b3db1d.css">
+
+		<!-- Scripts -->
+		<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js"></script>
+		<script nomodule="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine-ie11.min.js" defer=""></script>
+		<script src="main.d8ebb8d6.js"></script>
+	</head>
+	
+	<body class="lg:text-2xl text-xl">
+		<section class="header-wrapper sticky top-0" x-data="{showMobileNav: false}">
+			<header class="bg-white header">
+				<div class="container">
+					<div class="flex header__main items-center justify-between md:justify-center md:mb-5">
+						<div class="header__main-link hidden md:block">
+							<a class="hover-underline hover-underline--right" href="#aboutus">About Us</a>
+						</div>
+						<a class="md:mx-10" href="#" target="_blank">
+							<img class="header__main-logo" src="logo.236e4034.svg" alt="The Country’s Best Chicken Logo">
+						</a>
+						<div class="header__main-link hidden md:block">
+							<a class="hover-underline hover-underline--left" href="#ordernow">Order Now</a>
+						</div>
+						<button class="header__mobile-toggle md:hidden" @click="showMobileNav = !showMobileNav">
+							<span class="sr-only">Mobile menu toggle</span>
+							<svg x-show="!showMobileNav" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="40" y1="128" x2="216" y2="128" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="64" x2="216" y2="64" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="40" y1="192" x2="216" y2="192" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+							<svg x-show="showMobileNav" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="200" y1="56" x2="56" y2="200" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="200" y1="200" x2="56" y2="56" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+						</button>
+					</div>
+					<div class="header__nav-wrapper hidden md:block">
+						<nav class="header__nav">
+							<ul class="flex flex-wrap header__nav-list justify-center">
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#crispychicken">Crispy Chicken</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#tenders">Tenders</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#wings">Wings</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#sauces">Sauces</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#dippers">Dippers</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#sides">Sides</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#dessert">Dessert</a></li>
+								<li class="header__nav-item"><a class="hover-underline hover-underline--left" href="#beverages">Beverages</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- Mobile nav -->
+			<section x-show="showMobileNav" class="bg-white header-mobile md:hidden">
+				<div class="container">
+					<nav class="header__nav mb-4">
+						<ul class="header__nav-list">
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#crispychicken">Crispy Chicken</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#tenders">Tenders</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#wings">Wings</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#sauces">Sauces</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#dippers">Dippers</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#sides">Sides</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#dessert">Dessert</a></li>
+							<li class="header__nav-item"><a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#beverages">Beverages</a></li>
+						</ul>
+					</nav>
+					<div class="header__main-link">
+						<a @click="showMobileNav = false" class="hover-underline hover-underline--left" href="#aboutus">About Us</a>
+					</div>
+					<div class="header__main-link">
+						<a class="hover-underline hover-underline--left" href="#ordernow" target="_blank">Order Now</a>
+					</div>
+				</div>
+			</section>
+
+			<div class="header-gradient"></div>
+		</section>
+
+		<section class="hero">
+			<div class="hero__main">
+				<div class="container">
+					<div class="hero__content lg:max-w-lg lg:pb-56 md:py-40 ml-auto pb-20 pt-32 text-center">
+						<img src="logo-with-text.6a84eb6b.svg" alt="The Country’s Best Chicken Logo" class="hero__logo mb-12 mx-auto">
+						<p class="font-semibold hero__text lg:font-normal lg:max-w-sm mb-12 md:max-w-md mx-auto">Crispy, juicy chicken delivered to your door. One bite and you’ll understand why it’s The Country’s Best Chicken®.</p>
+						<button class="btn btn-red hero__button">Order Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="hero__bottom-divider">
+				<img src="hero-bottom-divider.953099ab.png" alt="" class="w-full">
+			</div>
+		</section>
+
+		<section class="menu">
+			<div class="container">
+				<div class="flex flex-wrap lg:-mx-8 lg:pt-4 pb-8 pt-16 row">
+					<div class="column lg:px-8 lg:text-right lg:w-1/3 text-center w-full">
+						<h1 class="font-condensed-book md:text-2xl text-xl uppercase">Country’s Best Chicken®</h1>
+						<h2 class="font-condensed-xbold leading-none md:text-6xl text-5xl uppercase">Our Menu</h2>
+					</div>
+				</div>
+				<div id="crispychicken" class="flex flex-wrap has-slider lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Crispy Chicken</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-4"><span class="hover:text-red underline">Our signature</span> crispy, juicy chicken is a menu must-have. Perfect for individual meals or to share with the entire family. Order with or without sides. And don’t forget your favorite dipper(s).</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="custom-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="2 Piece Dinner" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">2 Piece Dinner</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="4 Piece Dinner" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">4 Piece Dinner</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="8 Piece Box" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">8 Piece Box</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="8 Piece Family Meal" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">8 Piece Family Meal</p>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev swiper-nav-button"></div>
+								<div class="swiper-button-next swiper-nav-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tenders" class="flex flex-wrap lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Tenders</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-10">Our crispy on the outside, juicy on the inside chicken, only without the bones! Order with or without sides.</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="flex flex-wrap md:-mx-2 row">
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="3 Piece Meal" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">3 Piece Meal</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="5 Piece Meal" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">5 Piece Meal</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="10 Piece Meal" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">10 Piece Meal</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="wings" class="flex flex-wrap has-slider lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Wings</h2>
+						<p class="mb-8 sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-12">Our wings come in your choice of bone-in or boneless and with a side of sauce. Available in 6 or 12 pieces. Eat them alone or pair them with a side and a dipper.</p>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-12">6 or 12 pc. | Bone-in | Boneless</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="custom-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Garlic Parmesan Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">Garlic Parmesan</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="BBQ Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">BBQ</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Food" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">Buffalo</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Mango Habanero Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">Mango Habanero</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Garlic Parmesan Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Boneless</p>
+										<p class="mt-1">Garlic Parmesan</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Boneless BBQ Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Boneless</p>
+										<p class="mt-1">BBQ</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Boneless Mango Habanero Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Boneless</p>
+										<p class="mt-1">Mango Habanero</p>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev swiper-nav-button"></div>
+								<div class="swiper-button-next swiper-nav-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="wingcombos" class="flex flex-wrap has-slider lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Wing Combos</h2>
+						<p class="mb-8 sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-10">Get more out of your meal with our Wing Combos. The same juicy bone-in or boneless wings, paired with your choice of side(s) and dipper(s).</p>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-10">6 or 12 pc. | Bone-in | Boneless</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="custom-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Bone-in Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">1 side, 1 dipper</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Bone-in Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Bone-in</p>
+										<p class="mt-1">2 sides, 2 dippers</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Boneless Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Boneless</p>
+										<p class="mt-1">1 side, 1 dipper</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Boneless Wings" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Boneless</p>
+										<p class="mt-1">2 sides, 2 dippers</p>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev swiper-nav-button"></div>
+								<div class="swiper-button-next swiper-nav-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sauces" class="flex flex-wrap lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase xl:pl-20">Wing Sauce Options</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-20">Dip, dunk and devour our wings, cooked to perfection in your choice of sauce.</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="flex flex-wrap md:-mx-4 md:mb-16 row">
+							<div class="column mb-10 md:mb-0 md:px-4 md:w-1/3 ml-auto w-full">
+								<img src="item-image.cff50ae3.png" alt="Garlic Parmesan Sauce" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Garlic Parmesan</p>
+								<p class="mt-1">The sharp flavor of parmesan cheese mixed with a hint of garlic.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-4 md:w-1/3 mr-auto w-full">
+								<img src="item-image.cff50ae3.png" alt="BBQ Sauce" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">BBQ</p>
+								<p class="mt-1">Tangy traditional BBQ flavor.</p>
+							</div>
+						</div>
+						<div class="flex flex-wrap md:-mx-4 row">
+							<div class="column mb-10 md:mb-0 md:px-4 md:w-1/3 ml-auto w-full">
+								<img src="item-image.cff50ae3.png" alt="Buffalo Sauce" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Buffalo</p>
+								<p class="mt-1">A little heat makes for a tasty treat.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-4 md:w-1/3 mr-auto w-full">
+								<img src="item-image.cff50ae3.png" alt="Mango Habanero Sauce" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Mango Habanero</p>
+								<p class="mt-1">Sweet and spicy with a little kick.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="dippers" class="flex flex-wrap lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Dippers</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-20">Make The Country’s Best Chicken® even more flavorful by adding a dipping sauce!</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="flex flex-wrap md:-mx-2 md:mb-16 row">
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="BBQ Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">BBQ</p>
+								<p class="mt-1">Rich BBQ flavor.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Buffalo Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Buffalo</p>
+								<p class="mt-1">Just a little heat.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Ranch Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Ranch</p>
+								<p class="mt-1">Traditional dipping sauce.</p>
+							</div>
+						</div>
+						<div class="flex flex-wrap md:-mx-2 row">
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Chicken Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Chicken Dipper</p>
+								<p class="mt-1">Sweet and sassy.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Mango Habanero Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Mango Habanero</p>
+								<p class="mt-1">Sweet and heat.</p>
+							</div>
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Blue Cheese Dipper" class="lg:mb-4 max-w-full mb-2 mx-auto">
+								<p class="font-condensed-xbold text-2xl">Blue Cheese</p>
+								<p class="mt-1">Traditional dipping sauce.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sides" class="flex flex-wrap has-slider lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Sides</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-10">Make any meal complete with our delicious sides. From sweet to savory, there’s a side for everyone.</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="custom-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Mashed Potatoes" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Mashed Potatoes</p>
+										<p class="mt-1">Mouthwatering creamy potatoes served with gravy.</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Waffle Fries" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Waffle Fries</p>
+										<p class="mt-1">Need we say more?</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Chips" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Chips</p>
+										<p class="mt-1">Crispy chips sprinkled with savory seasoning.</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Wedges" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Wedges</p>
+										<p class="mt-1">Potato wedges sliced and cooked to perfection.</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Corn" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Corn</p>
+										<p class="mt-1">Sweet and buttery corn.</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Coleslaw" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">Coleslaw</p>
+										<p class="mt-1">Creamy and delicious.</p>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev swiper-nav-button"></div>
+								<div class="swiper-button-next swiper-nav-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="dessert" class="flex flex-wrap lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Dessert</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-12">Who can resist an ooey, gooey chocolate chip cookie? Seven slices in this cravable 8-inch cookie.</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="flex flex-wrap md:-mx-2 row">
+							<div class="column mb-10 md:mb-0 md:px-2 md:w-1/3 w-full">
+								<img src="item-image.cff50ae3.png" alt="Chocolate Chip Cookie" class="lg:mb-4 max-w-full mb-2 mx-auto">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="beverages" class="flex flex-wrap has-slider lg:-mx-8 lg:py-20 py-8 row scroll-snap">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-black mb-4 md:text-4.5xl text-3xl text-red uppercase">Beverages</h2>
+						<p class="sm:max-w-md sm:mx-auto xl:max-w-full xl:pl-10">Don’t forget to finish off your order with a cold, refreshing drink. Choose from Coke, Diet Coke, Sprite or water.</p>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 text-center w-full">
+						<div class="custom-swiper">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Coke" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">20 oz</p>
+										<p class="mt-1">Coke</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Diet Coke" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">20 oz</p>
+										<p class="mt-1">Diet Coke</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Sprite" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">20 oz</p>
+										<p class="mt-1">Sprite</p>
+									</div>
+									<div class="swiper-slide">
+										<img src="item-image.cff50ae3.png" alt="Dasani" class="lg:mb-4 max-w-full mb-2 mx-auto">
+										<p class="font-condensed-xbold text-2xl">20 oz</p>
+										<p class="mt-1">Dasani</p>
+									</div>
+								</div>
+
+								<div class="swiper-button-prev swiper-nav-button"></div>
+								<div class="swiper-button-next swiper-nav-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="aboutus" class="about-us scroll-snap">
+			<div class="about-us__top-divider">
+				<img src="about-us-divider.457a9fe8.png" alt="" class="w-full">
+			</div>
+			<div class="bg-yellow">
+				<div class="container pb-20 pt-16">
+					<div class="flex flex-wrap lg:-mx-8">
+						<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+							<h2 class="font-condensed-xbold lg:mt-4 md:text-5xl text-4xl uppercase xl:text-6xl">About Us</h2>
+						</div>
+						<div class="column lg:px-8 lg:text-left lg:w-2/3 text-center w-full">
+							<p class="lg:mx-0 max-w-2xl mx-auto">The Country’s Best Chicken® takes chicken delivery to the next level. In a small town in Northwest Iowa in 1981, <a href="" target="_blank" class="underline">Pizza Ranch</a> created The Country’s Best Chicken® as an item on its popular buffet. Now, our chicken is filling a need for a cravable meal delivered directly to your door. One bite and you’ll understand why we’re called The Country’s Best Chicken®.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg-dark faqs text-white">
+			<div class="container pb-20 pt-16">
+				<div class="flex flex-wrap lg:-mx-8">
+					<div class="column lg:mb-0 lg:px-8 lg:text-right lg:w-1/3 mb-8 text-center w-full">
+						<h2 class="font-condensed-xbold lg:mt-4 md:text-5xl text-4xl xl:text-6xl">FAQs</h2>
+					</div>
+					<div class="column lg:px-8 lg:w-2/3 w-full">
+						<div class="faq">
+							<div class="faq__group" x-data="{ open: false }">
+								<div class="faq__question" :class="{ 'open': open === true }" @click="open = !open">
+									<div class="faq__question-text">Consectetur adipisicing elit. Repellat, vero.</div>
+									<div x-show="open === false" class="faq__question-icon icon-plus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path></svg></div>
+									<div x-show="open === true" class="faq__question-icon icon-minus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 22 11 L 2 11 L 2 13 L 22 13 L 22 11 Z"></path></svg></div>
+								</div>
+								<div class="faq__answer" x-ref="answer1" x-bind:style="open === true ? 'max-height: ' + $refs.answer1.scrollHeight + 'px' : ''">
+									<div class="faq__answer-text">Lorem ipsum dolor sit amet, <span class="underline">consetetur sadipscing</span> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</div>
+								</div>
+							</div>
+							<div class="faq__group" x-data="{ open: false }">
+								<div class="faq__question" :class="{ 'open': open === true }" @click="open = !open">
+									<div class="faq__question-text">Consectetur adipisicing elit. Repellat, vero.</div>
+									<div x-show="open === false" class="faq__question-icon icon-plus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path></svg></div>
+									<div x-show="open === true" class="faq__question-icon icon-minus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 22 11 L 2 11 L 2 13 L 22 13 L 22 11 Z"></path></svg></div>
+								</div>
+								<div class="faq__answer" x-ref="answer1" x-bind:style="open === true ? 'max-height: ' + $refs.answer1.scrollHeight + 'px' : ''">
+									<div class="faq__answer-text">Lorem ipsum dolor sit amet, <span class="underline">consetetur sadipscing</span> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</div>
+								</div>
+							</div>
+							<div class="faq__group" x-data="{ open: false }">
+								<div class="faq__question" :class="{ 'open': open === true }" @click="open = !open">
+									<div class="faq__question-text">Consectetur adipisicing elit. Repellat, vero.</div>
+									<div x-show="open === false" class="faq__question-icon icon-plus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path></svg></div>
+									<div x-show="open === true" class="faq__question-icon icon-minus"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path fill-rule="evenodd" d="M 22 11 L 2 11 L 2 13 L 22 13 L 22 11 Z"></path></svg></div>
+								</div>
+								<div class="faq__answer" x-ref="answer1" x-bind:style="open === true ? 'max-height: ' + $refs.answer1.scrollHeight + 'px' : ''">
+									<div class="faq__answer-text">Lorem ipsum dolor sit amet, <span class="underline">consetetur sadipscing</span> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-red py-6 text-white">
+			<div class="container">
+				<div class="flex-wrap justify-between md:flex text-xl">
+					<div class="mb-6 md:mb-0 text-center">
+						<a href="https://pizzaranch.com/terms-of-use" target="_blank" class="block hover:no-underline mr-4 sm:inline underline">Terms of Use</a>
+						<a href="https://pizzaranch.com/privacy-policy" target="_blank" class="block hover:no-underline mr-4 sm:inline underline">Privacy Policy</a>
+						<a href="#" target="_blank" class="block hover:no-underline sm:inline underline">Allergen & Nutrition Info</a>
+					</div>
+					<div class="text-center">
+						<span>® <span id="year"></span> Pizza Ranch, INC.</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+
+	<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","url":"https://www.thecountrysbestchicken.com","image":"https://www.thecountrysbestchicken.com/schema/logo.png","name":"The Country’s Best Chicken","description":"The Country’s Best Chicken® is a delivery-only restaurant concept by Pizza Ranch. Enjoy crispy, juicy, bone-in chicken, or go boneless with our cravable tenders and wings.","servesCuisine":["Chicken"],"hasMenu":{"@type":"Menu","hasMenuSection":[{"@type":"MenuSection","name":"Crispy Chicken","description":"Our signature crispy, juicy chicken is a menu must-have. Perfect for individual meals or to share with the entire family. Order with or without sides. And don’t forget your favorite dipper(s).","hasMenuItem":[{"@type":"MenuItem","name":"2 Piece Dinner","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"4 Piece Dinner","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"8 Piece Box","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"8 Piece Family Meal","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Tenders","description":"Our crispy on the outside, juicy on the inside chicken, only without the bones! Order with or without sides.","hasMenuItem":[{"@type":"MenuItem","name":"3 Piece Dinner","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"5 Piece Meal","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"10 Piece Meal","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Wings","description":"Our wings come in your choice of bone-in or boneless and with a side of sauce. Available in 6 or 12 pieces. Eat them alone or pair them with a side and dipper.","hasMenuItem":[{"@type":"MenuItem","name":"6 Bone-In Garlic Parmesan","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Bone-In Garlic BBQ","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Bone-In Buffalo","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Bone-In Mango Habanero","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Boneless Garlic Parmesan","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Boneless BBQ","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Boneless Mango Habanero","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Wing Combo Meals","description":"Get more out of your meal with our Wing Combos. The same juicy bone-in or boneless wings, paired with your choice of side(s) and dipper(s).","hasMenuItem":[{"@type":"MenuItem","name":"6 Bone-In, 1 Side, 1 Dip","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Bone-In, 2 Sides, 2 Dips","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"6 Boneless, 1 Side, 1 Dip","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Boneless, 2 Sides, 2 Dips","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Wing Sauces","description":"Dip, dunk and devour our wings, cooked to perfection in your choice of sauce.","hasMenuItem":[{"@type":"MenuItem","name":"Garlic Parmesan Sauce","description":"The sharp flavor of parmesan cheese mixed with a hint of garlic.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"BBQ Sauce","description":"Tangy traditional BBQ flavor.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Buffalo Sauce","description":"A little heat makes for a tasty treat.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Mango Habanero Sauce","description":"Sweet and spicy with a little kick.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Dipping Sauces","description":"Make The Country’s Best Chicken® even more flavorful by adding a dipping sauce!","hasMenuItem":[{"@type":"MenuItem","name":"BBQ Dipping Sauce","description":"Rich BBQ flavor.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Buffalo Dipping Sauce","description":"Just a little heat.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Ranch Dipping Sauce","description":"Traditional dipping sauce.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Chicken Dipper Dipping Sauce","description":"Sweet and sassy.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Mango Habanero Dipping Sauce","description":"Sweet and heat.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Blue Cheese Dipping Sauce","description":"Traditional dipping sauce.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Sides","description":"Make any meal complete with our delicious sides. From sweet to savory, there’s a side for everyone.","hasMenuItem":[{"@type":"MenuItem","name":"Mashed Potatoes and Gravy","description":"Mouthwatering creamy potatoes served with gravy.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Waffle Fries","description":"Need we say more?","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Chips","description":"Crispy chips sprinkled with savory seasoning.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Wedges","description":"Potato wedges sliced and cooked to perfection.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Corn","description":"Sweet and buttery corn.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"Coleslaw","description":"Creamy and delicious.","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Dessert","description":"Who can resist an ooey, gooey chocolate chip cookie? Seven slices in this cravable 8-inch cookie.","hasMenuItem":[{"@type":"MenuItem","name":"Chocolate Chip Cookie","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]},{"@type":"MenuSection","name":"Beverages","description":"Don’t forget to finish off your order with a cold, refreshing drink. Choose from Coke, Diet Coke, Sprite or water.","hasMenuItem":[{"@type":"MenuItem","name":"20 oz Coke","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"20 oz Diet Coke","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"20 oz Sprite","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}},{"@type":"MenuItem","name":"20 oz Dasani","image":"http://your-restaurant.com/image","offers":{"@type":"Offer","availableAtOrFrom":"Delivery Only"}}]}],"inLanguage":"English"}}</script>
+</html>
